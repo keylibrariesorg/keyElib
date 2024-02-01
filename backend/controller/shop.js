@@ -39,17 +39,17 @@ router.post("/create-shop", catchAsyncErrors(async (req, res, next) => {
 
     const activationToken = createActivationToken(seller);
 
-    const activationUrl = `https://loclahost:3000/seller/activation/${activationToken}`;
+    const activationUrl = `https://localhost:3000/seller/activation/${activationToken}`;
 
     try {
       await sendMail({
         email: seller.email,
-        subject: "Activate your Shop",
-        message: `Hello ${seller.name}, please click on the link to activate your shop: ${activationUrl}`,
+        subject: "Activate your Account",
+        message: `Hello ${seller.name}, please click on the link to activate your account: ${activationUrl}`,
       });
       res.status(201).json({
         success: true,
-        message: `please check your email:- ${seller.email} to activate your shop!`,
+        message: `please check your email:- ${seller.email} to activate your Account!`,
       });
     } catch (error) {
       return next(new ErrorHandler(error.message, 500));
@@ -296,7 +296,7 @@ router.delete(
 
       if (!seller) {
         return next(
-          new ErrorHandler("Seller is not available with this id", 400)
+          new ErrorHandler("User is not available with this id", 400)
         );
       }
 
@@ -304,7 +304,7 @@ router.delete(
 
       res.status(201).json({
         success: true,
-        message: "Seller deleted successfully!",
+        message: "User deleted successfully!",
       });
     } catch (error) {
       return next(new ErrorHandler(error.message, 500));
@@ -343,7 +343,7 @@ router.delete(
       const seller = await Shop.findById(req.seller._id);
 
       if (!seller) {
-        return next(new ErrorHandler("Seller not found with this id", 400));
+        return next(new ErrorHandler("User not found with this id", 400));
       }
 
       seller.withdrawMethod = null;

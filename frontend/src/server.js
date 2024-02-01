@@ -1,3 +1,5 @@
-export const server = "https://127.0.0.1:8000/api/v2";
+export const server = "https://localhost:8000/api/v2";
+
+export const backend_url = "https://localhost/:8000/"
 
 
