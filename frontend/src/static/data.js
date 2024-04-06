@@ -5,11 +5,11 @@ export const navItems = [
       url: "/",
     },
     {
-      title: "Best Selling",
+      title: "Most Read Books",
       url: "/best-selling",
     },
     {
-      title: "Products",
+      title: "Books",
       url: "/products",
     },
     {
