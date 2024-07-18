@@ -6,11 +6,11 @@ export const navItems = [
     },
     {
       title: "Most Read Books",
-      url: "/best-selling",
+      url: "/most-read",
     },
     {
       title: "Books",
-      url: "/products",
+      url: "/books",
     },
     {
       title: "Events",
@@ -26,8 +26,8 @@ export const navItems = [
   export const brandingData = [
     {
       id: 1,
-      title: "Free Shipping",
-      Description: "From all orders over 100$",
+      title: "read",
+      Description: "Happy",
       icon: (
         <svg
           width="36"
@@ -76,8 +76,8 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "Daily Surprise Offers",
-      Description: "Save up to 25% off",
+      title: "Monthly Updates",
+      Description: "Keeps you intouch",
       icon: (
         <svg
           width="32"
@@ -104,8 +104,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Affortable Prices",
-      Description: "Get Factory direct price",
+      title: "Best Collection",
+      Description: "Get the best collection Ever from our libraries",
       icon: (
         <svg
           width="32"
@@ -151,8 +151,8 @@ export const navItems = [
     },
     {
       id: 5,
-      title: "Secure Payments",
-      Description: "100% protected payments",
+      title: "Support",
+      Description: "100% Support as you grow",
       icon: (
         <svg
           width="32"
@@ -191,7 +191,7 @@ export const navItems = [
   export const categoriesData = [
     {
       id: 1,
-      title: "Computers and Laptops",
+      title: "Computers And tablets",
       subTitle: "",
       image_Url:
         "https://cdn.shopify.com/s/files/1/1706/9177/products/NEWAppleMacbookProwithM1ProChip14InchLaptop2021ModelMKGQ3LL_A_16GB_1TBSSD_custommacbd.jpg?v=1659592838",
@@ -568,7 +568,7 @@ export const navItems = [
       link: "/carrers"
     },
     {
-      name: "Store Locations",
+      name: "Libraries Locations",
     },
     {
       name: "Our Blog",
@@ -606,9 +606,7 @@ export const navItems = [
     {
       name: "Contact Us",
     },
-    {
-      name: "Shipping",
-    },
+  
     {
       name: "Live chat",
     },
