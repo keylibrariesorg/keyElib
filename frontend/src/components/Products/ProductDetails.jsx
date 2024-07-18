@@ -64,11 +64,11 @@ const ProductDetails = ({ data }) => {
       toast.error("Item already in cart!");
     } else {
       if (data.stock < 1) {
-        toast.error("Product stock limited!");
+        toast.error("Book stock limited!");
       } else {
         const cartData = { ...data, qty: count };
         dispatch(addTocart(cartData));
-        toast.success("Item added to cart successfully!");
+        toast.success("Book added to cart successfully!");
       }
     }
   };
@@ -267,7 +267,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(1)}
           >
-            Product Details
+            Book Details
           </h5>
           {active === 1 ? (
             <div className={`${styles.active_indicator}`} />
@@ -280,7 +280,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(2)}
           >
-            Product Reviews
+            Book Reviews
           </h5>
           {active === 2 ? (
             <div className={`${styles.active_indicator}`} />
@@ -293,7 +293,7 @@ const ProductDetailsInfo = ({
             }
             onClick={() => setActive(3)}
           >
-            Seller Information
+            Library Information
           </h5>
           {active === 3 ? (
             <div className={`${styles.active_indicator}`} />
@@ -330,7 +330,7 @@ const ProductDetailsInfo = ({
 
           <div className="w-full flex justify-center">
             {data && data.reviews.length === 0 && (
-              <h5>No Reviews have for this product!</h5>
+              <h5>No Reviews have for this book yet!</h5>
             )}
           </div>
         </div>
