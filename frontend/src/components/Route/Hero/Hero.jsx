@@ -18,10 +18,12 @@ const Hero = () => {
           Best Libraries for <br /> Readers
         </h1>
         <p className="pt-5 text-[16px] font-[Poppins] font-[400] text-[#000000ba]">
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
-          assumenda? Quisquam itaque <br /> exercitationem labore vel, dolore
-          quidem asperiores, laudantium temporibus soluta optio consequatur{" "}
-          <br /> aliquam deserunt officia. Dolorum saepe nulla provident.
+        Discover the finest libraries that cater to book lovers and avid readers. 
+  Explore a vast collection of books, <br /> journals, and digital resources, 
+  and enjoy a serene environment perfect for reading and research. Our libraries <br /> 
+  offer a welcoming space for all ages, providing access to knowledge, 
+  inspiration, and community programs. Visit us <br /> today to immerse yourself 
+  in the world of literature and learning.
         </p>
         <Link to="/books" className="inline-block">
             <div className={`${styles.button} mt-5`}>
