@@ -99,9 +99,9 @@ const Header = ({ activeHeading }) => {
           </div>
 
           <div className={`${styles.button}`}>
-            <Link to={`${isSeller ? "/dashboard" : "/shop-create"}`}>
+            <Link to={`${isSeller ? "/dashboard" : "/lib-create"}`}>
               <h1 className="text-[#fff] flex items-center">
-                {isSeller ? "Go Dashboard" : "KEY ADMIN"}{" "}
+                {isSeller ? "Go Dashboard" : "KEY"}{" "}
                 <IoIosArrowForward className="ml-1" />
               </h1>
             </Link>
@@ -300,9 +300,9 @@ const Header = ({ activeHeading }) => {
 
               <Navbar active={activeHeading} />
               <div className={`${styles.button} ml-4 !rounded-[4px]`}>
-                <Link to="/shop-create">
+                <Link to="/lib-create">
                   <h1 className="text-[#fff] flex items-center">
-                    KEY ADMIN <IoIosArrowForward className="ml-1" />
+                    KEY <IoIosArrowForward className="ml-1" />
                   </h1>
                 </Link>
               </div>
