@@ -13,8 +13,9 @@ const DashboardHeader = () => {
       <div>
         <Link to="/dashboard">
           <img
-            src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            src="https://keylibraries.org/wp-content/themes/key/ico/apple-touch-icon.png"
             alt=""
+            className="mt-3 cursor-pointer w-[60px] h-[60px]"
           />
         </Link>
       </div>
