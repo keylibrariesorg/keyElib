@@ -61,7 +61,7 @@ const ProductDetails = ({ data }) => {
   const addToCartHandler = (id) => {
     const isItemExists = cart && cart.find((i) => i._id === id);
     if (isItemExists) {
-      toast.error("Item already in cart!");
+      toast.error("Book already in cart!");
     } else {
       if (data.stock < 1) {
         toast.error("Book stock limited!");
@@ -378,7 +378,7 @@ const ProductDetailsInfo = ({
                 <div
                   className={`${styles.button} !rounded-[4px] !h-[39.5px] mt-3`}
                 >
-                  <h4 className="text-white">Visit Shop</h4>
+                  <h4 className="text-white">Visit Library</h4>
                 </div>
               </Link>
             </div>

@@ -139,7 +139,7 @@ router.get(
       const user = await User.findById(req.user.id);
 
       if (!user) {
-        return next(new ErrorHandler("User doesn't exists", 400));
+        return next(new ErrorHandler("This user doesn't exists", 400));
       }
 
       res.status(200).json({
@@ -329,7 +329,7 @@ router.put(
 
       if (req.body.newPassword !== req.body.confirmPassword) {
         return next(
-          new ErrorHandler("Password doesn't matched with each other!", 400)
+          new ErrorHandler("Your Paswords does not match!", 400)
         );
       }
       user.password = req.body.newPassword;
@@ -394,7 +394,7 @@ router.delete(
 
       if (!user) {
         return next(
-          new ErrorHandler("User is not available with this id", 400)
+          new ErrorHandler("A user with this id does not exist", 400)
         );
       }
 
