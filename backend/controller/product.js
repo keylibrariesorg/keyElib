@@ -16,7 +16,7 @@ router.post(
       const shopId = req.body.shopId;
       const shop = await Shop.findById(shopId);
       if (!shop) {
-        return next(new ErrorHandler("Shop Id is invalid!", 400));
+        return next(new ErrorHandler("Library Id is invalid!", 400));
       } else {
         let images = [];
 
@@ -95,7 +95,7 @@ router.delete(
 
       res.status(201).json({
         success: true,
-        message: "Product Deleted successfully!",
+        message: "Book Deleted successfully!",
       });
     } catch (error) {
       return next(new ErrorHandler(error, 400));

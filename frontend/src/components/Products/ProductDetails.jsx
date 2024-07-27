@@ -151,9 +151,6 @@ const ProductDetails = ({ data }) => {
                 <h1 className={`${styles.productTitle}`}>{data.name}</h1>
                 <p>{data.description}</p>
                 <div className="flex pt-3">
-                  <h4 className={`${styles.productDiscountPrice}`}>
-                    {data.discountPrice}$
-                  </h4>
                   <h3 className={`${styles.price}`}>
                     {data.originalPrice ? data.originalPrice + "$" : null}
                   </h3>
@@ -206,7 +203,7 @@ const ProductDetails = ({ data }) => {
                   </span>
                 </div>
                 <div className="flex items-center pt-8">
-                  <Link to={`/shop/preview/${data?.shop._id}`}>
+                  <Link to={`/library/preview/${data?.shop._id}`}>
                     <img
                       src={`${data?.shop?.avatar?.url}`}
                       alt=""
@@ -214,7 +211,7 @@ const ProductDetails = ({ data }) => {
                     />
                   </Link>
                   <div className="pr-8">
-                    <Link to={`/shop/preview/${data?.shop._id}`}>
+                    <Link to={`/library/preview/${data?.shop._id}`}>
                       <h3 className={`${styles.shop_name} pb-1 pt-1`}>
                         {data.shop.name}
                       </h3>
@@ -339,7 +336,7 @@ const ProductDetailsInfo = ({
       {active === 3 && (
         <div className="w-full block 800px:flex p-5">
           <div className="w-full 800px:w-[50%]">
-            <Link to={`/shop/preview/${data.shop._id}`}>
+            <Link to={`/library/preview/${data.shop._id}`}>
               <div className="flex items-center">
                 <img
                   src={`${data?.shop?.avatar?.url}`}
