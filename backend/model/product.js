@@ -13,15 +13,15 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: [true, "Please enter your book category!"],
   },
-  tags: {
-    type: String,
-  },
-  originalPrice: {
+  ISBN: {
     type: Number,
-  },
-  discountPrice: {
-    type: Number,
-    required: [true, "Please enter your book price!"],
+    required: [true, "Enter the ISBN number of the book!"],
+    validate: {
+      validator: function(v) {
+        return /^\d{13}$/.test(v.toString());
+      },
+      message: props => `${props.value} is not a valid 13-digit ISBN number!`
+    }
   },
   stock: {
     type: Number,

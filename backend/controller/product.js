@@ -82,7 +82,7 @@ router.delete(
       const product = await Product.findById(req.params.id);
 
       if (!product) {
-        return next(new ErrorHandler("Product is not found with this id", 404));
+        return next(new ErrorHandler("Book is not found with this id", 404));
       }    
 
       for (let i = 0; 1 < product.images.length; i++) {
