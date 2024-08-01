@@ -71,10 +71,7 @@ const Faq = () => {
           {activeTab === 2 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                If you're not satisfied with your purchase, we accept returns
-                within 30 days of delivery. To initiate a return, please email
-                us at support@myecommercestore.com with your order number and a
-                brief explanation of why you're returning the item.
+                If you're not satisfied with your book visit us .
               </p>
             </div>
           )}
@@ -86,7 +83,7 @@ const Faq = () => {
             onClick={() => toggleTab(3)}
           >
             <span className="text-lg font-medium text-gray-900">
-              How do I track my order?
+              How do I see my books?
             </span>
             {activeTab === 3 ? (
               <svg
@@ -121,9 +118,9 @@ const Faq = () => {
           {activeTab === 3 && (
             <div className="mt-4">
               <p className="text-base text-gray-500">
-                You can track your order by clicking the tracking link in your
-                shipping confirmation email, or by logging into your account on
-                our website and viewing the order details.
+                You can see your books by clicking the book link in your
+                 confirmation email, or by logging into your account on
+                our website and viewing the book details.
               </p>
             </div>
           )}
@@ -171,7 +168,7 @@ const Faq = () => {
             <div className="mt-4">
               <p className="text-base text-gray-500">
                 You can contact our customer support team by emailing us at
-                support@myecommercestore.com, or by calling us at (555) 123-4567
+                support@.com, or by calling us at (555) 123-4567
                 between the hours of 9am and 5pm EST, Monday through Friday.
               </p>
             </div>
