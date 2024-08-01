@@ -42,7 +42,7 @@ const ProductDetailsCard = ({ setOpen, data }) => {
       toast.error("Item already in cart!");
     } else {
       if (data.stock < count) {
-        toast.error("Product stock limited!");
+        toast.error("Book stock limited!");
       } else {
         const cartData = { ...data, qty: count };
         dispatch(addTocart(cartData));

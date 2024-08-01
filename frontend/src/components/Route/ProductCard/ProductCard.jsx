@@ -51,7 +51,7 @@ const ProductCard = ({ data,isEvent }) => {
       toast.error("Book already in cart!");
     } else {
       if (data.stock < 1) {
-        toast.error("Product stock limited!");
+        toast.error("Book stock limited!");
       } else {
         const cartData = { ...data, qty: 1 };
         dispatch(addTocart(cartData));
@@ -64,7 +64,7 @@ const ProductCard = ({ data,isEvent }) => {
     <>
       <div className="w-full h-[370px] bg-white rounded-lg shadow-sm p-3 relative cursor-pointer">
         <div className="flex justify-end"></div>
-        <Link to={`${isEvent === true ? `/product/${data._id}?isEvent=true` : `/product/${data._id}`}`}>
+        <Link to={`${isEvent === true ? `/book/${data._id}?isEvent=true` : `/book/${data._id}`}`}>
           <img
             src={`${data.images && data.images[0]?.url}`}
             alt=""
