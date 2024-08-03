@@ -17,6 +17,8 @@ const CreateProduct = () => {
   const [description, setDescription] = useState("");
   const [category, setCategory] = useState("");
   const [tags, setTags] = useState("");
+  const [author, setAuthor] = useState("");
+  const [publisher, setPublisher] = useState("");
   const [isbn, setisbn] = useState();
   const [stock, setStock] = useState();
 
@@ -60,6 +62,8 @@ const CreateProduct = () => {
     newForm.append("description", description);
     newForm.append("category", category);
     newForm.append("tags", tags);
+    newForm.append("author", author);
+    newForm.append("publisher", publisher);
     newForm.append("isbn", isbn);
     newForm.append("stock", stock);
     newForm.append("shopId", seller._id);
@@ -69,6 +73,8 @@ const CreateProduct = () => {
         description,
         category,
         tags,
+        author,
+        publisher,
         isbn,
         stock,
         shopId: seller._id,
@@ -146,10 +152,44 @@ const CreateProduct = () => {
         </div>
         <br />
         <div>
+          <label className="pb-2">
+            Author <span className="text-red-500">*</span>
+          </label>
+          <textarea
+            cols="30"
+            required
+            rows="8"
+            type="text"
+            name="author"
+            value={author}
+            className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+            onChange={(e) => setAuthor(e.target.value)}
+            placeholder="Enter the author..."
+          ></textarea>
+        </div>
+        <br />
+        <div>
+          <label className="pb-2">
+            Publisher <span className="text-red-500">*</span>
+          </label>
+          <textarea
+            cols="30"
+            required
+            rows="8"
+            type="text"
+            name="publisher"
+            value={publisher}
+            className="mt-2 appearance-none block w-full pt-2 px-3 border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
+            onChange={(e) => setPublisher(e.target.value)}
+            placeholder="Enter the publisher..."
+          ></textarea>
+        </div>
+        <br />
+        <div>
           <label className="pb-2">ISBN number</label>
           <input
             type="number"
-            name="price"
+            name="isbn"
             value={isbn}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
             onChange={(e) => setisbn(e.target.value)}
@@ -165,11 +205,11 @@ const CreateProduct = () => {
           </label>
           <input
             type="number"
-            name="price"
+            name="isbn"
             value={stock}
             className="mt-2 appearance-none block w-full px-3 h-[35px] border border-gray-300 rounded-[3px] placeholder-gray-400 focus:outline-none focus:ring-green-500 focus:border-green-500 sm:text-sm"
             onChange={(e) => setStock(e.target.value)}
-            placeholder="Enter your product stock..."
+            placeholder="Enter your books stock..."
           />
         </div>
         <br />

@@ -17,6 +17,18 @@ const productSchema = new mongoose.Schema({
     type: Number,
     required: [true, "Please enter your book stock!"],
   },
+  author: {
+    type: String,
+    required: [true, "Please enter the author of the book"],
+  },
+  publisher: {
+    type: String,
+    required: [true, "Please enter the Publisher of the book"],
+  },
+  isbn: {
+    type: Number,
+    required: [true, "Please enter the ISBN number of the book"],
+  },
   images: [
     {
       public_id: {
@@ -60,7 +72,7 @@ const productSchema = new mongoose.Schema({
     type: Object,
     required: true,
   },
-  sold_out: {
+  no_read: {
     type: Number,
     default: 0,
   },
