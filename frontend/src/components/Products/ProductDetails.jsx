@@ -151,8 +151,8 @@ const ProductDetails = ({ data }) => {
                 <h1 className={`${styles.productTitle}`}>{data.name}</h1>
                 <p>{data.description}</p>
                 <div className="flex pt-3">
-                  <h3 className={`${styles.price}`}>
-                    {data.originalPrice ? data.originalPrice + "$" : null}
+                  <h3 className={`${styles.isbn}`}>
+                    {data.isbn ? data.isbn + "ISBN" : null}
                   </h3>
                 </div>
 
