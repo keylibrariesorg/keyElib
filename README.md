@@ -9,7 +9,7 @@ const name = require("Name")
 ```js
 ctrl + shift + tilda 
 .then
-ctrl + shift + 5  two times
+ctrl + shift + 5  (X2)
 ```
 ## go to the backend directory with the command below 
 

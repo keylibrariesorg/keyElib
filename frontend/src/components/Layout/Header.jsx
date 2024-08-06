@@ -217,10 +217,10 @@ const Header = ({ activeHeading }) => {
           </div>
           <div>
             <Link to="/">
-              <img
-                src="https://shopo.quomodothemes.website/assets/images/logo.svg"
+            <img
+                src="https://keylibraries.org/wp-content/themes/key/ico/apple-touch-icon.png"
                 alt=""
-                className="mt-3 cursor-pointer"
+                className="mt-3 cursor-pointer w-[70px] h-[70px]"
               />
             </Link>
           </div>
